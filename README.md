@@ -25,6 +25,19 @@
   </ul>
   
   <li><h2>EFCore Service</h2></li>
+  <ul><li>Learned From EFCore Service</li>
+  <ul>
+    <li>creating tableDTO class</li>
+    <li>AppDBContext inheriting from DBContext and overiding onConfiguring function with SQL connection string builder and using optionBuilder to connect sql connection string and name the tableDTO class to suitable name </li>
+    <li>Creating EFCore service class and add functions of crud</li>
+    <li>Creating db from appDBContext</li>
+    <li>To read db.table.toList to get list item of table and loop it to read</li>
+    <li>To create, create object from DTOclass with needed properties, add properties to db and save changes </li>
+    <li>To update, db.table.where(data => data.id == required id).firstOrDefault if there's an item update where it should</li>
+    <li>To delete, same as update change the delete flag to false</li>
+  </ul>
+  </ul>
+  
 
 
   
