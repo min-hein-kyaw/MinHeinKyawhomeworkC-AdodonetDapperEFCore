@@ -20,4 +20,10 @@
   </ol>
   <li>Starting SQL connection</li>
   <li>Continuing CRUD Process</li>
+  <li>#Create</li>
+  <ol>
+    <li>store a SQL query string</li>
+    <li>calling sql command object with the arguments of query and sql connection</li>
+    <li>execute the query</li>
+  </ol>
 </ol>
