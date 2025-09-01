@@ -11,7 +11,18 @@
     <li>Execute Non Query</li>
   </ul>
   <li><h2>Dapper Service</h2></li>
+  <li>Learned from Dapper Service</li>
+  <ul>
+    <li>Create a class for the database</li>
+    <li>IDBConnection as interface</li>
+    <li> <dynamic> to <ClassName> and list to store the table </li>
+    <li>CRUD command of execute</li>
+    <li>names in class name and database name should be the same else there are problems</li>
+  </ul>
   <li><h2>EFCore Service</h2></li>
+
+
+  
   <ul>
     <li><h3>Features</h3></li>
 <ul>
