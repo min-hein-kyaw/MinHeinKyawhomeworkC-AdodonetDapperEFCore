@@ -1,4 +1,11 @@
 <h1>Homework for reviewing AdoDotNetService, Dapper and EFCore Services</h1>
+ <li><h3>Features</h3></li>
+<ul>
+  <li>Create</li>
+  <li>Read</li>
+  <li>Update</li>
+  <li>Delete</li>
+</ul>
 <ol>
   <li><h2>AdoDotNet Servie</h2></li>
   <ul><li>Learned From AdoDotNet</li>
@@ -41,14 +48,6 @@
 
 
   
-  <ul>
-    <li><h3>Features</h3></li>
-<ul>
-  <li>Create</li>
-  <li>Read</li>
-  <li>Update</li>
-  <li>Delete</li>
-</ul>
-  </ul>
+ 
 </ol>
 
