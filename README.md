@@ -1,6 +1,15 @@
 <h1>Homework for reviewing AdoDotNetService, Dapper and EFCore Services</h1>
 <ol>
   <li><h2>AdoDotNet Servie</h2></li>
+  <li>Learned From AdoDotNet</li>
+  <ul>
+    <li>SQL Connection String Builder</li>
+    <li>SQL Connection</li>
+    <li>Query</li>
+    <li>SQL Data Adaper</li>
+    <li>Data Table to fill in SQL Data Adapter</li>
+    <li>Execute Non Query</li>
+  </ul>
   <li><h2>Dapper Service</h2></li>
   <li><h2>EFCore Service</h2></li>
   <ul>
