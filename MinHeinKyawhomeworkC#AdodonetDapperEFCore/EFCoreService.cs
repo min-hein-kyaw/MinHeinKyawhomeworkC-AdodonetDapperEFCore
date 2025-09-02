@@ -14,7 +14,7 @@ namespace MinHeinKyawhomeworkC_AdodonetDapperEFCore
             List<EmployeeDTO> employees = db.Employees.ToList();
             foreach (EmployeeDTO item in employees)
             {
-                Console.WriteLine($"{item.Id} {item.first_name}");
+                Console.WriteLine($"{item.Id} {item.FirstName}");
             }
 
         }
@@ -23,13 +23,13 @@ namespace MinHeinKyawhomeworkC_AdodonetDapperEFCore
             EmployeeDTO employee = new EmployeeDTO()
             {
                 Id = 31,
-                first_name = "David",
-                last_name = "Beckham",
-                email = "db@gmail.com",
-                department = "Finance",
-                salary = 70000,
-                hire_date = DateTime.Now,
-                delete_flag = false
+                FirstName = "David",
+                LastName = "Beckham",
+                Email = "db@gmail.com",
+                Department = "Finance",
+                Salary = 70000,
+                HireDate = DateTime.Now,
+                DeleteFlag = false
             };
             db.Employees.Add(employee);
             int results = db.SaveChanges();
@@ -39,7 +39,7 @@ namespace MinHeinKyawhomeworkC_AdodonetDapperEFCore
             EmployeeDTO? editEmployee = db.Employees.Where(item => item.Id == 10).FirstOrDefault();
             if (editEmployee != null)
             {
-                editEmployee.salary = 1000000;
+                editEmployee.Salary = 1000000;
                 int results = db.SaveChanges();
                 Console.WriteLine($"{results} rows affected");
             }
@@ -49,7 +49,7 @@ namespace MinHeinKyawhomeworkC_AdodonetDapperEFCore
             EmployeeDTO? deleEmployee = db.Employees.Where(item => item.Id == 10).FirstOrDefault();
             if (deleEmployee != null)
             {
-                deleEmployee.delete_flag = true;
+                deleEmployee.DeleteFlag = true;
                 int results = db.SaveChanges();
                 Console.WriteLine($"{results} rows affected");
             }

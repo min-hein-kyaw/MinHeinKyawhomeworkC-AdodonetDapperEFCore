@@ -14,18 +14,25 @@ namespace MinHeinKyawhomeworkC_AdodonetDapperEFCore
         [Key]
         public int Id { get; set; }
 
-        public string first_name { get; set; }
+        [Column("first_name")]
+        public string FirstName { get; set; }
 
-        public string last_name { get; set; }
+        [Column("last_name")]
+        public string LastName { get; set; }
 
-        public string email { get; set; }
+        [Column("email")]
+        public string Email { get; set; }
 
-        public string department { get; set; }
+        [Column("department")]
+        public string Department { get; set; }
 
-        public decimal salary { get; set; }
+        [Column("salary")]
+        public decimal Salary { get; set; }
 
-        public DateTime hire_date { get; set; }
+        [Column("hire_date")]
+        public DateTime HireDate { get; set; }
 
-        public bool delete_flag { get; set; }
+        [Column("delete_flag")]
+        public bool DeleteFlag { get; set; }
     }
 }
