@@ -17,12 +17,11 @@ DapperService dapperService = new DapperService();
 //dapperService.Delete();
 
 EFCoreService efcoreService = new EFCoreService();
-efcoreService.Read();
+//efcoreService.Read();
 //efcoreService.Create();
 //efcoreService.Update();
 //efcoreService.Delete();
-Console.ReadLine();
-
+//Console.ReadLine();
 
 
 

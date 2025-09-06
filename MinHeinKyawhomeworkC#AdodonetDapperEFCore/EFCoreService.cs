@@ -11,7 +11,7 @@ namespace MinHeinKyawhomeworkC_AdodonetDapperEFCore
         AppDbContext db = new AppDbContext();
         public void Read()
         {
-            List<EmployeeDTO> employees = db.Employees.ToList();
+            List<EmployeeDTO> employees = db.Employees.Where(item => item.DeleteFlag == false).ToList();
             foreach (EmployeeDTO item in employees)
             {
                 Console.WriteLine($"{item.Id} {item.FirstName}");
@@ -46,7 +46,7 @@ namespace MinHeinKyawhomeworkC_AdodonetDapperEFCore
         }
         public void Delete()
         {
-            EmployeeDTO? deleEmployee = db.Employees.Where(item => item.Id == 10).FirstOrDefault();
+            EmployeeDTO? deleEmployee = db.Employees.Where(item => item.Id == 31).FirstOrDefault();
             if (deleEmployee != null)
             {
                 deleEmployee.DeleteFlag = true;
